@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Workshop - Project Detail</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" onclick="location.href='index.html'">Zayar Htoo</div>
+        <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li id="theme-toggle">🌙</li>
+        </ul>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo" onclick="location.href='index.html'">Zayar Htoo</div>
+        <span id="theme-toggle-mobile">🌙</span>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="togglemenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="togglemenu()">Experience</a></li>
+                <li><a href="index.html#projects" onclick="togglemenu()">Projects</a></li>
+                <li><a href="index.html#contact" onclick="togglemenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="project-detail">
+        <p class="section__text__p1">School Coursework: UI/UX Design</p>
+        <h1 class="title">Makerspace Workshop</h1>
+        
+        <div class="section-container">
+            <div class="about-details-container" style="flex-direction: column; width: 100%;">
+                
+                <div class="details-container">
+                    <h3>The Challenge</h3>
+                    <p>A local art studio needed a digital home to showcase their diverse range of classes—including <b>pottery, soap-making, jewelry crafting, and traditional drawing</b>. The challenge was to create a visual identity that felt as "handmade" and inviting as the workshops themselves while maintaining a functional booking system.</p>
+                </div>
+
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="assests/checkmark.png" alt="icon" class="icon">
+                        <h3>My Role</h3>
+                        <p><b>Frontend Developer & Designer</b><br>Visual Identity & Layout</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="assests/experience.png" alt="icon" class="icon">
+                        <h3>Tech Stack</h3>
+                        <p>HTML5, CSS3, JavaScript, Flexbox</p>
+                    </div>
+                </div>
+
+                <div class="text-container">
+    <h3>The Process</h3>
+    <p>I started with low-fidelity wireframes to decide how the pottery and jewelry galleries would stack on mobile devices.</p>
+    
+    <div class="project-image-gallery">
+        <div class="image-wrapper">
+            <img src="assests/workshop-wireframe.png" alt="Site Wireframe" class="project-doc-img">
+            <p>Initial Wireframe</p>
+        </div>
+        <div class="image-wrapper">
+            <img src="assests/workshop-final.png" alt="Final Art Site" class="project-doc-img">
+            <p>Final Responsive Design</p>
+        </div>
+    </div>
+</div>
+                <div class="details-container color-container">
+                    <h3>The Result</h3>
+                    <p>The final site successfully balanced aesthetics with utility. I received an 'A' for the module, specifically for the <b>intuitive navigation</b>. The project proved that I can build websites that aren't just functional, but also beautiful and brand-aligned.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            </div>
+        </nav>
+
+        <p>Copyright &#169; 2026 Zayar Htoo. All Rights Reserved.</p>
+     </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
