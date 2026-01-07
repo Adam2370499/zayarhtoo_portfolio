@@ -450,4 +450,43 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Specific Styles for Project Detail Images */
+.project-image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.image-wrapper {
+    flex: 1 1 350px; /* Base width of 350px, grows to fill space */
+    max-width: 100%; /* Prevents wrapper from ever exceeding screen width */
+    text-align: center;
+}
+
+.project-doc-img {
+    width: 100%;        /* Scales to fit the wrapper */
+    max-width: 600px;   /* Prevents the image from becoming too huge on desktop */
+    max-height: 400px;  /* Keeps tall diagrams from taking up the whole screen */
+    object-fit: contain; /* Ensures the image isn't cropped/stretched */
+    border-radius: 1rem;
+    border: 1px solid var(--secondary-text); /* Optional: adds a subtle border */
+    background-color: #f9f9f9; /* Helps white diagrams pop against dark themes */
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+
+.project-doc-img:hover {
+    transform: scale(1.03); /* Subtle zoom effect */
+}
+
+.image-wrapper p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+
 
