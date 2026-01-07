@@ -112,5 +112,13 @@
         text-align: justify;
     }
 
+     .project-image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-wrapper {
+        width: 100%;
+    }
+
 }
 
