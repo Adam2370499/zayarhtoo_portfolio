@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Project Detail</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" onclick="location.href='index.html'">Zayar Htoo</div>
+        <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li id="theme-toggle">🌙</li>
+        </ul>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Zayar Htoo</div>
+        <span id="theme-toggle-mobile">🌙</span>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="togglemenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="togglemenu()">Experience</a></li>
+                <li><a href="index.html#projects" onclick="togglemenu()">Projects</a></li>
+                <li><a href="index.html#contact" onclick="togglemenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="project-detail">
+        <p class="section__text__p1">Full-Stack School Project</p>
+        <h1 class="title">Dynamic Shopping Cart</h1>
+        
+        <div class="section-container">
+            <div class="about-details-container" style="flex-direction: column; width: 100%;">
+                
+                <div class="details-container">
+                    <h3>The Challenge</h3>
+                    <p>Building a shopping cart requires managing state: items must be added, quantities updated, and totals calculated accurately—even if the page is refreshed.</p>
+                </div>
+
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h3>My Role</h3>
+                        <p><b>Full-Stack Developer</b><br>Backend Logic & DB Integration</p>
+                    </div>
+                    <div class="details-container">
+                        <h3>Tech Stack</h3>
+                        <p>PHP, MySQL, JavaScript (AJAX)</p>
+                    </div>
+                </div>
+
+                <div class="text-container">
+    <h3>The Process</h3>
+    <p>The foundation was a solid MySQL database. I designed the tables to handle product relationships and session-based cart persistence.</p>
+    
+    <div class="project-image-gallery">
+        <div class="image-wrapper">
+            <img src="assests/cart-db-schema.png" alt="Database ERD" class="project-doc-img">
+            <p>Database ERD Schema</p>
+        </div>
+        <div class="image-wrapper">
+            <img src="assests/cart-checkout.png" alt="Checkout Page" class="project-doc-img">
+            <p>Order & Total Calculation</p>
+        </div>
+    </div>
+</div>
+
+                <div class="details-container color-container">
+                    <h3>The Result</h3>
+                    <p>A fully functional e-commerce prototype. It handles edge cases like "out of stock" items and correctly calculates tax and shipping. This project was key in proving my <b>backend logic skills</b>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer><p>Copyright &#169; 2026 Zayar Htoo. All Rights Reserved.</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>

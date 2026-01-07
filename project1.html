@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple-Stats - Project Detail</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo" onclick="location.href='index.html'">Zayar Htoo</div>
+        <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li id="theme-toggle">🌙</li>
+        </ul>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Zayar Htoo</div>
+        <span id="theme-toggle-mobile">🌙</span>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#about" onclick="togglemenu()">About</a></li>
+                <li><a href="index.html#experience" onclick="togglemenu()">Experience</a></li>
+                <li><a href="index.html#projects" onclick="togglemenu()">Projects</a></li>
+                <li><a href="index.html#contact" onclick="togglemenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="project-detail">
+        <p class="section__text__p1">Personal Developer Tool</p>
+        <h1 class="title">Simple-Stats</h1>
+        
+        <div class="section-container">
+            <div class="about-details-container" style="flex-direction: column; width: 100%;">
+                
+                <div class="details-container">
+                    <h3>The Challenge</h3>
+                    <p>Standard analytics tools like Google Analytics can be heavy and privacy-invasive. I wanted to create a <b>lightweight, open-source alternative</b> that provides essential website traffic data without complex setups or cookies.</p>
+                </div>
+
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="assests/checkmark.png" alt="icon" class="icon">
+                        <h3>My Role</h3>
+                        <p><b>Creator & Lead Developer</b><br>Script Design & API Management</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="assests/experience.png" alt="icon" class="icon">
+                        <h3>Tech Stack</h3>
+                        <p>JavaScript (Tracking Script), Node.js, Vercel</p>
+                    </div>
+                </div>
+
+                <div class="text-container">
+    <h3>The Process</h3>
+    <p>I mapped out the data flow to ensure the tracking script wouldn't block the main thread of the host website.</p>
+    
+    <div class="project-image-gallery">
+        <div class="image-wrapper">
+            <img src="assests/stats-flowchart.png" alt="Data Flowchart" class="project-doc-img">
+            <p>System Logic Flow</p>
+        </div>
+        <div class="image-wrapper">
+            <img src="assests/stats-dashboard.png" alt="Finished Dashboard" class="project-doc-img">
+            <p>Finished Dashboard UI</p>
+        </div>
+    </div>
+</div>
+
+                <div class="details-container color-container">
+                    <h3>The Result</h3>
+                    <p>The script is currently live and tracking my own portfolio! It has a footprint of less than 2KB, making it one of the fastest ways to get basic site insights. It successfully solved my need for a <b>privacy-first</b> analytics solution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer><p>Copyright &#169; 2026 Zayar Htoo. All Rights Reserved.</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
